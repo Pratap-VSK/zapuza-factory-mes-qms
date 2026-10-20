@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#1e3a5f" stroke-width="0.7" />
+    </pattern>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#38bdf8" stroke-width="1" />
+    </pattern>
+  </defs>
+  <!-- Blueprint Background -->
+  <rect width="1000" height="500" fill="#0a192f" />
+  <rect width="1000" height="500" fill="url(#grid)" />
+  <rect x="15" y="15" width="970" height="470" fill="none" stroke="#38bdf8" stroke-width="2" />
+
+  <!-- Center Axis Line -->
+  <line x1="60" y1="210" x2="940" y2="210" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="15,5,3,5" />
+
+  <!-- Stepped Transmission Drive Shaft Profile -->
+  <!-- Left Spline / Step -->
+  <rect x="110" y="150" width="110" height="120" fill="#0f2942" stroke="#e2e8f0" stroke-width="2.5" />
+  <!-- Primary Bearing Journal OD (Pin #1 CTQ - X:28%, Y:42%) -->
+  <rect x="220" y="125" width="160" height="170" fill="#163a5f" stroke="#fb923c" stroke-width="3" />
+  <!-- Center Flange Shoulder -->
+  <rect x="380" y="95" width="70" height="230" fill="#0f2942" stroke="#e2e8f0" stroke-width="2.5" />
+  <!-- Main Shaft Body (Pin #3 Surface/Deburr - X:50%, Y:75%) -->
+  <rect x="450" y="135" width="160" height="150" fill="#0f2942" stroke="#e2e8f0" stroke-width="2.5" />
+  <!-- M24x2.0 External Thread Section (Pin #2 - X:68%, Y:42%) -->
+  <rect x="610" y="155" width="170" height="110" fill="url(#hatch)" stroke="#38bdf8" stroke-width="2.5" />
+  <line x1="610" y1="163" x2="780" y2="163" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="6,4" />
+  <line x1="610" y1="257" x2="780" y2="257" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="6,4" />
+  <!-- Right Keyway End -->
+  <rect x="780" y="170" width="90" height="80" fill="#0f2942" stroke="#e2e8f0" stroke-width="2.5" />
+
+  <!-- Dimension Callout Lines -->
+  <line x1="220" y1="70" x2="220" y2="120" stroke="#94a3b8" stroke-width="1" />
+  <line x1="380" y1="70" x2="380" y2="90" stroke="#94a3b8" stroke-width="1" />
+  <line x1="220" y1="80" x2="380" y2="80" stroke="#fb923c" stroke-width="1.5" />
+  <text x="300" y="72" fill="#fb923c" font-family="monospace" font-size="13" text-anchor="middle" font-weight="bold">Ø25.00 +0.05/-0.02 [CTQ]</text>
+
+  <line x1="610" y1="105" x2="610" y2="150" stroke="#94a3b8" stroke-width="1" />
+  <line x1="780" y1="105" x2="780" y2="150" stroke="#94a3b8" stroke-width="1" />
+  <line x1="610" y1="115" x2="780" y2="115" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="695" y="107" fill="#38bdf8" font-family="monospace" font-size="13" text-anchor="middle" font-weight="bold">M24 x 2.0 - 6g (±0.02)</text>
+
+  <!-- Engineering Title Block -->
+  <rect x="620" y="385" width="350" height="85" fill="#071120" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="635" y="410" fill="#38bdf8" font-family="monospace" font-size="14" font-weight="bold">ZAPUZA TECHNOLOGIES LLP - CAD STUDIO</text>
+  <text x="635" y="430" fill="#e2e8f0" font-family="monospace" font-size="12">PART: ZPZ-SHF-4140 (DRIVE SHAFT)</text>
+  <text x="635" y="448" fill="#94a3b8" font-family="monospace" font-size="11">MATL: AISI 4140 | DWG: DRW-SHF-4140-REV-A</text>
+  <text x="635" y="463" fill="#22c55e" font-family="monospace" font-size="11">TOLERANCE CLASS: ISO 2768-mK | UNITS: MM</text>
+</svg>
